@@ -1,5 +1,5 @@
 import React from "react";
-import searchSvg from "../../assets/svg/search.svg";
+
 
 const SearchBar = () => {
   return (

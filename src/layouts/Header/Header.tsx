@@ -8,14 +8,16 @@ import Basket from "./Basket";
 
 const Header = () => {
   return (
-    <div className="container">
-      <div className="header  my-8 mx-auto flex items-center justify-between ">
-        <Logo />
-        <CategoryBar />
-        <SearchBar />
-        <Navigation />
-        <Basket />
-        <UserActions />
+    <div className="border-b shadow-2xl ">
+      <div className="container">
+        <div className="header my-4 mx-auto flex items-center justify-between ">
+          <Logo />
+          <CategoryBar />
+          <SearchBar />
+          <Navigation />
+          <Basket />
+          <UserActions />
+        </div>
       </div>
     </div>
   );

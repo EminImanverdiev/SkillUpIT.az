@@ -1,6 +1,6 @@
 import React from "react";
-import categorySvg from "../../assets/svg/category.svg";
-import Category from "module";
+import categorySvg from "../../assets/svg/header/category.svg"
+
 
 const CategoryBar = () => {
   return (
