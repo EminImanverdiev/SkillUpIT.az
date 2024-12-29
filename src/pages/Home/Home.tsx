@@ -1,9 +1,10 @@
 import React from 'react'
+import CoursesOverview from './CoursesOverview'
 
 const Home = () => {
   return (
-    <div>
-      <p>home</p>
+    <div >
+      <CoursesOverview/>
     </div>
   )
 }
