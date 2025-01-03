@@ -1,33 +1,42 @@
 .email-address {
-    position: relative;
-    display: inline-block;
-    text-decoration: none; /* Remove default underline */
-  }
-  
-  .email-address::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #000; /* Change to your preferred underline color */
-    transition: width 0.3s ease, left 0.3s ease;
-  }
-  
-  .email-address:hover::after {
-    width: 100%;
-    left: 0;
-    transition-delay: 0.2s; /* Delay the underline by 0.2 seconds */
-  }
-  
-
-.custom-color{
-    width: 500px;
-    height: 509px;
-    margin-right: 25px;
-    margin-bottom: 24px;
-    background-color: #FFD25D;
-    border-radius: 67% 33% 35% 65% / 37% 35% 65% 63%;
+  position: relative;
+  display: inline-block;
+  text-decoration: none; /* Remove default underline */
 }
 
+.email-address::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #000; /* Change to your preferred underline color */
+  transition:
+    width 0.3s ease,
+    left 0.3s ease;
+}
+
+.email-address:hover::after {
+  width: 100%;
+  left: 0;
+  transition-delay: 0.2s; /* Delay the underline by 0.2 seconds */
+}
+
+.custom-color {
+  width: 500px;
+  height: 509px;
+  margin-right: 25px;
+  margin-bottom: 24px;
+  background-color: #ffd25d;
+  border-radius: 67% 33% 35% 65% / 37% 35% 65% 63%;
+}
+
+/* footer */
+.footer-list > ul > li {
+  transition-duration: 1s;
+}
+
+.footer-list > ul > li:hover {
+  color: #5956E9;
+}

@@ -14,14 +14,19 @@ import Vacancies from "./pages/Vacancies/Vacancies";
 import Courses from "./pages/Courses/Courses";
 import Event from "./pages/Event/Event";
 import Header from "./layouts/Header/Header";
+import Footer from "./layouts/Footer/Footer";
+import ScrollToTap from "./utils/ScrollToTap";
 
 function App() {
   return (
     <>
       <Header />
+      <ScrollToTap />
       <Routes>
         {/* Place Header outside Routes to render it on all pages */}
+
         <Route>
+          
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/event" element={<Event />} />
@@ -34,9 +39,11 @@ function App() {
           <Route path="/student" element={<Students />} />
           <Route path="/teacher" element={<Teachers />} />
           <Route path="/vacancies" element={<Vacancies />} />
-          <Route path="./pages/Contact" element={<Contact/>}/>
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/addmition"/>
         </Route>
       </Routes>
+      <Footer />
     </>
   );
 }
