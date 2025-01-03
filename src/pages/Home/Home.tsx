@@ -1,13 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import CoursesOverview from './CoursesOverview';
 import Funfact from './Funfact';
+import Category from './Category';
 
 const Home = () => {
   return (
     <div>   
       <CoursesOverview />
       <Funfact/>
+      <Category/>
     </div>
   );
 };
