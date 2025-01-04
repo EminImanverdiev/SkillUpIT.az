@@ -1,3 +1,4 @@
+
 .email-address {
     position: relative;
     display: inline-block;
@@ -21,3 +22,13 @@
     transition-delay: 0.2s; /* Delay the underline by 0.2 seconds */
   }
   
+
+.custom-color{
+    width: 500px;
+    height: 509px;
+    margin-right: 25px;
+    margin-bottom: 24px;
+    background-color: #FFD25D;
+    border-radius: 67% 33% 35% 65% / 37% 35% 65% 63%;
+}
+
