@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
   return (
@@ -7,7 +8,7 @@ const Navigation = () => {
         <ul className="flex space-x-6 font-semibold text-gray-700">
           <li className="relative group">
             <button className="flex items-center space-x-2 hover:text-blue-500">
-              <span>Demos</span>
+              <span><Link to="/demos">Demos</Link></span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-4 h-4 transform group-hover:rotate-180 transition-transform duration-300"
@@ -24,7 +25,7 @@ const Navigation = () => {
           </li>
           <li className="relative group">
             <button className="flex items-center space-x-2 hover:text-blue-500">
-              <span>Courses</span>
+              <span><Link to="/courses">Courses</Link></span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-4 h-4 transform group-hover:rotate-180 transition-transform duration-300"
@@ -41,7 +42,7 @@ const Navigation = () => {
           </li>
           <li className="relative group">
             <button className="flex items-center space-x-2 hover:text-blue-500">
-              <span>Pages</span>
+              <span><Link to="/pages">Pages</Link></span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-4 h-4 transform group-hover:rotate-180 transition-transform duration-300"
@@ -58,7 +59,7 @@ const Navigation = () => {
           </li>
           <li className="relative group">
             <button className="flex items-center space-x-2 hover:text-blue-500">
-              <span>Block</span>
+              <span><Link to="/block">Block</Link></span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-4 h-4 transform group-hover:rotate-180 transition-transform duration-300"
@@ -75,7 +76,7 @@ const Navigation = () => {
           </li>
           <li className="relative group">
             <button className="flex items-center space-x-2 hover:text-blue-500">
-              <span className="font-semibold">Contact</span>
+              <span className="font-semibold"><Link to="/contact">Contact</Link> </span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-4 h-4 transform group-hover:rotate-180 transition-transform duration-300"

@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     container: {
       center: true,
@@ -25,9 +22,10 @@ export default {
     },
     extend: {
       colors: {
-        'bt-blue': '#5169F1',
-        'grey-cl': '#9FA0A3',
+        "bt-blue": "#5169F1",
+        "grey-cl": "#9FA0A3",
         primary: "#5956E9",
+        secondary: "#55585b",
       },
       animation: {
         slowPing: "slowPing 1.5s infinite",
@@ -50,10 +48,10 @@ export default {
         },
         moveUpDown: {
           "0%, 100%": {
-            transform: "translateY(0)", 
+            transform: "translateY(0)",
           },
           "50%": {
-            transform: "translateY(70px)", 
+            transform: "translateY(70px)",
           },
         },
       },
