@@ -7,8 +7,8 @@ import line from "../../assets/images/line-2-category-2.svg";
 
 const Category = () => {
   return (
-      <div className="container">
-    <div className="my-20">
+    <div className="container">
+      <div className="my-20">
         <div className="text-center mt-20">
           <p className="text-primary font-semibold ">Top Categories</p>
           <h1 className="text-[50px]  font-semibold">
@@ -20,13 +20,15 @@ const Category = () => {
           </h1>
         </div>
         <div className="category grid grid-cols-4 py-10 gap-6">
-          <div className="border rounded-3xl text-center py-2">
-            <div className="w-full px-4 overflow-hidden transition-all duration-300 ease-in-out transform hover:scale-105   ">
-              <img
-                src={img1}
-                alt="phone"
-                className="object-contain w-full rounded-2xl "
-              />
+          <div className="border rounded-3xl text-center overflow-hidden py-2">
+            <div className="px-2 overflow-hidden">
+              <div className="w-full h-[200px] overflow-hidden rounded-xl group relative  ">
+                <img
+                  src={img1}
+                  alt="phone"
+                  className="w-full h-full rounded-xl  object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+              </div>
             </div>
             <h2 className="text-black font-semibold py-4 text-xl hover:text-primary duration-300">
               Mobile Application
@@ -36,12 +38,14 @@ const Category = () => {
             </p>
           </div>
           <div className="border rounded-3xl text-center py-2">
-            <div className="w-full px-4 overflow-hidden transition-all duration-300 ease-in-out transform hover:scale-105   ">
-              <img
-                src={img2}
-                alt="phone"
-                className="object-contain w-full rounded-2xl "
-              />
+            <div className="px-2">
+              <div className="w-full h-[200px] overflow-hidden rounded-xl group relative  ">
+                <img
+                  src={img2}
+                  alt="phone"
+                  className="w-full h-full rounded-xl  object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+              </div>
             </div>
             <h2 className="text-black font-semibold py-4 text-xl hover:text-primary duration-300">
               Photography
@@ -51,12 +55,14 @@ const Category = () => {
             </p>
           </div>
           <div className="border rounded-3xl text-center py-2">
-            <div className="w-full px-4 overflow-hidden transition-all duration-300 ease-in-out transform hover:scale-105   ">
-              <img
-                src={img3}
-                alt="phone"
-                className="object-contain w-full rounded-2xl "
-              />
+            <div className="px-2">
+              <div className="w-full h-[200px] overflow-hidden rounded-xl group relative   ">
+                <img
+                  src={img3}
+                  alt="phone"
+                  className="w-full h-full rounded-xl  object-cover transition-transform duration-300 group-hover:scale-110 "
+                />
+              </div>
             </div>
             <h2 className="text-black font-semibold py-4 text-xl hover:text-primary duration-300">
               UI/UX Design
@@ -66,12 +72,14 @@ const Category = () => {
             </p>
           </div>
           <div className="border rounded-3xl text-center py-2">
-            <div className="w-full px-4 overflow-hidden transition-all duration-300 ease-in-out transform hover:scale-105   ">
-              <img
-                src={img4}
-                alt="phone"
-                className="object-contain w-full rounded-2xl "
-              />
+            <div className="px-2">
+              <div className="w-full h-[200px] overflow-hidden rounded-xl group relative   ">
+                <img
+                  src={img4}
+                  alt="phone"
+                  className="w-full h-full rounded-xl  object-cover transition-transform duration-300 group-hover:scale-110 "
+                />
+              </div>
             </div>
             <h2 className="text-black font-semibold py-4 text-xl hover:text-primary duration-300">
               Development
