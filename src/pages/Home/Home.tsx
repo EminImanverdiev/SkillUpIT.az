@@ -5,6 +5,7 @@ import Category from "./Category";
 import Subscribe from "./Subscribe";
 import PopularCourses from "./PopularCourses";
 import PopularPost from "./PopularPost";
+import Testimonials from "./Testimonials";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Funfact />
       <Category />
       <PopularCourses />
+      <Testimonials/>
       <PopularPost/>
       <Subscribe />
     </div>
