@@ -11,8 +11,8 @@ const Home = () => {
       <CoursesOverview />
       <Funfact />
       <Category />
-      <Subscribe />
       <PopularCourses />
+      <Subscribe />
     </div>
   );
 };
