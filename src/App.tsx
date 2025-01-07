@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import "./index.css";
 import About from "./pages/About/About";
+import About2 from "./pages/About/abbbb.jsx";
 import Home from "./pages/Home/Home";
 import Blog from "./pages/Blog/Blog";
 import Apply from "./pages/Apply/Apply";
@@ -26,7 +27,7 @@ function App() {
         {/* Place Header outside Routes to render it on all pages */}
 
         <Route>
-          
+    
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/event" element={<Event />} />
