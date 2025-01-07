@@ -12,9 +12,7 @@
   width: 0;
   height: 2px;
   background-color: #000; /* Change to your preferred underline color */
-  transition:
-    width 0.3s ease,
-    left 0.3s ease;
+  transition: width 0.3s ease, left 0.3s ease;
 }
 
 .email-address:hover::after {
@@ -29,10 +27,10 @@
   margin-right: 25px;
   margin-bottom: 24px;
   background-color: #ffd25d;
-  border-radius: 67% 33% 35% 65% / 37% 35% 65% 63%;
+  border-radius: 50%; /* Adjusted for proper parsing */
 }
 
-/* footer */
+/* Footer */
 .footer-list > ul > li {
   transition-duration: 1s;
 }

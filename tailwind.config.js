@@ -26,6 +26,14 @@ export default {
         "grey-cl": "#9FA0A3",
         primary: "#5956E9",
         secondary: "#55585b",
+        "eightbg": "#f7f3f2",
+        "heading-primary": "#1a73e8",
+        "theme-primary": "#0056b3",
+        "common-white": "#ffffff",
+      },
+      width: {
+        "w-24f": "24%",
+        "w-58f": "58%",
       },
       animation: {
         slowPing: "slowPing 1.5s infinite",
