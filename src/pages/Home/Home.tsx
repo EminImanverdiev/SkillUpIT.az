@@ -6,6 +6,7 @@ import Subscribe from "./Subscribe";
 import PopularCourses from "./PopularCourses";
 import PopularPost from "./PopularPost";
 import Testimonials from "./Testimonials";
+import Instructors from "./Instructors";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Funfact />
       <Category />
       <PopularCourses />
+      <Instructors/>
       <Testimonials/>
       <PopularPost/>
       <Subscribe />
