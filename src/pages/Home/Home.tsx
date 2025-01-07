@@ -1,8 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Ensure this import is included for navigation links.
 import CoursesOverview from './CoursesOverview';
 import Funfact from './Funfact';
 import Category from './Category';
-import { Link } from 'react-router-dom'; // Ensure this import is included if you're using `Link`.
 
 const Home = () => {
   return (

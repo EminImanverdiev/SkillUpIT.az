@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     container: {
       center: true,
@@ -24,24 +21,19 @@ export default {
       },
     },
     extend: {
-<<<<<<< HEAD
-      colors:{
-        'bt-blue':'#5169F1',
-        'grey-cl':'#9FA0A3',
-        'eightbg':'#f7f3f2',
-        'heading-primary': '#1a73e8',
-        'theme-primary': '#0056b3',
-        'common-white': '#ffffff',
-      },
-      width:{
-        'w-24f':'24%',
-        'w-58f':'58%'
-      }
-=======
       colors: {
-        'bt-blue': '#5169F1',
-        'grey-cl': '#9FA0A3',
+        "bt-blue": "#5169F1",
+        "grey-cl": "#9FA0A3",
         primary: "#5956E9",
+        secondary: "#55585b",
+        "eightbg": "#f7f3f2",
+        "heading-primary": "#1a73e8",
+        "theme-primary": "#0056b3",
+        "common-white": "#ffffff",
+      },
+      width: {
+        "w-24f": "24%",
+        "w-58f": "58%",
       },
       animation: {
         slowPing: "slowPing 1.5s infinite",
@@ -64,14 +56,13 @@ export default {
         },
         moveUpDown: {
           "0%, 100%": {
-            transform: "translateY(0)", 
+            transform: "translateY(0)",
           },
           "50%": {
-            transform: "translateY(70px)", 
+            transform: "translateY(70px)",
           },
         },
       },
->>>>>>> cfa09768829a1959d12c6e0e628d7eebfdb12131
     },
   },
   plugins: [],
