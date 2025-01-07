@@ -27,7 +27,7 @@ function App() {
         {/* Place Header outside Routes to render it on all pages */}
 
         <Route>
-        <Route path="/about2" element={<About2 />} />
+    
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/event" element={<Event />} />
