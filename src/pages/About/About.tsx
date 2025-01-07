@@ -1,4 +1,8 @@
-import  { useState, useEffect } from 'react';
+import  { useState, useEffect,useRef } from 'react';
+import { Swiper, SwiperSlide } from "swiper/react";
+import about19 from "../../assets/images/tchreimg.jpg";
+import "swiper/css";
+import { FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
 import about1 from '../../assets/images/aboutImg.jpg';
 import about2 from '../../assets/images/brand-2-logo-1.png';
 import about3 from '../../assets/images/brand-2-logo-2.png';
@@ -20,6 +24,7 @@ import about15 from '../../assets/svg/team-2-svg-1.svg';
 import about16 from '../../assets/images/diploma_8793837.png';
 import about17 from '../../assets/images/graduation_8670931 (1).png';
 import about18 from '../../assets/images/support_8760081 (1).png';
+
 const About: React.FC = () => {
   const values = [
     {
@@ -87,22 +92,62 @@ const About: React.FC = () => {
     {
       name: "Kathryn Murphy",
       subject: "Interior Design",
-      image: "/path-to-kathryn-image.jpg",
+      image: about19,
+      socials: {
+        facebook: "https://facebook.com/",
+        twitter: "https://twitter.com/",
+        linkedin: "https://linkedin.com/",
+      },
     },
     {
       name: "Mina Hollace",
       subject: "Interior Design",
-      image: "/path-to-mina-image.jpg",
+ 
+      image: about19,
+      socials: {
+        facebook: "https://facebook.com/",
+        twitter: "https://twitter.com/",
+        linkedin: "https://linkedin.com/",
+      },
     },
     {
       name: "Leslie Alexander",
       subject: "Interior Design",
-      image: "/path-to-leslie-image.jpg",
+      image: about19,
+      socials: {
+        facebook: "https://facebook.com/",
+        twitter: "https://twitter.com/",
+        linkedin: "https://linkedin.com/",
+      },
     },
     {
       name: "Annette Black",
       subject: "Interior Design",
-      image: "/path-to-annette-image.jpg",
+      image: about19,
+      socials: {
+        facebook: "https://facebook.com/",
+        twitter: "https://twitter.com/",
+        linkedin: "https://linkedin.com/",
+      },
+    },
+    {
+      name: "Annette Black",
+      subject: "Interior Design",
+      image: about19,
+      socials: {
+        facebook: "https://facebook.com/",
+        twitter: "https://twitter.com/",
+        linkedin: "https://linkedin.com/",
+      },
+    }, {
+      name: "Annette Black",
+      subject: "Interior Design",
+      image: about19,
+      socials: {
+        facebook: "https://facebook.com/",
+        twitter: "https://twitter.com/",
+        linkedin: "https://linkedin.com/",
+      },
     },
   ];
   const partners = [
@@ -115,14 +160,30 @@ const About: React.FC = () => {
     { id: 7, name: 'StudentChat', logo: about8 },
     { id: 8, name: 'Learning', logo: about9 },
   ];
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+  const swiperRef = useRef(null);  // Add a ref to access Swiper instance
 
+  // Function to move to the previous slide
+  const goToPreviousSlide = () => {
+    if (swiperRef.current) {
+      swiperRef.current.swiper.slidePrev(); // Ensure swiperRef is not null
+    }
+  };
+
+  // Function to move to the next slide
+  const goToNextSlide = () => {
+    if (swiperRef.current) {
+      swiperRef.current.swiper.slideNext(); // Ensure swiperRef is not null
+    }
+  };
   return (
+    
     <div>
-      <section className="py-16">
-        <div className="px-6  lg:px-32">
+      <section className="py-16 ">
+        <div className="px:4 lg:px-16 max-w-[1240px] mx-auto">
           <div>
             <h2 className="text-xl lg:text-2xl text-gray-800">About Our Classes</h2>
-            <p className="mt-4 text-5xl lg:text-7xl font-semibold">
+            <p className="mt-4 text-5xl lg:text-6xl font-bold">
               We providing the <br /> best quality online courses.
             </p>
           </div>
@@ -196,7 +257,7 @@ const About: React.FC = () => {
 
     </section>
 
-      <section className="bg-white py-16">
+      <section className="bg-white py-16 mx-auto max-w-[1240px]">
         <div className="container mx-auto px-6 lg:px-20">
           {/* Header Section */}
           <div className="text-left">
@@ -261,8 +322,8 @@ const About: React.FC = () => {
 
         </div>
       </section>
-          {/* Statistics Section */}
-          <div className="bg-blue-600 text-white py-12 mt-16 flex flex-wrap justify-around">
+          {/* Statistics Section */} 
+          <div className= " bg-blue-600 lg:px-16 text-white py-12 mt-16 flex flex-wrap justify-around">
       {stats.map((stat, index) => (
         <div className="text-center" key={index}>
           <h3 className="text-4xl font-bold">{formatNumber(stat.value)}</h3>
@@ -272,14 +333,14 @@ const About: React.FC = () => {
     </div>
 
       {/* Mission and Values Section */}
-      <section className="bg-gray-50 py-16 ">
-  <div className="container mx-auto px-6 lg:px-20 flex flex-col md:flex-row  justify-between items-center md:gap-12">
+      <section className="  bg-gray-50 py-16 ">
+  <div className=" max-w-[1240px] mx-auto px-6 lg:px-20 flex flex-col md:flex-row  justify-between items-center md:gap-12">
     {/* Left Section: Illustration */}
     <div className="max-w-[560px] min-w-[300px] lg:-mt-40 lg:sticky lg:top-4">
       <img
         src={about10} // Replace with your illustration's path
         alt="Illustration"
-        className="lg:max-w-[380px] w-40 h-auto -scale-x-100 md:scale-x-100 sticky top-28"
+        className="lg:max-w-[480px] lg:min-w-[300px] lg:-top-8 w-40 h-auto -scale-x-100 md:scale-x-100 sticky top-20"
       />
     </div>
 
@@ -331,31 +392,113 @@ const About: React.FC = () => {
 
 {/*! //qalib bura api-a da etmek */}
       {/* Meet Our Teachers Section */}
-      <section className="bg-white py-16">
-        <div className="container mx-auto  px-6 lg:px-20">
-          <h2 className="text-4xl font-bold text-gray-900 mb-6 text-center">
-            Meet Our <span className="text-blue-600">Teachers <img src={about15} className='top-2' alt="img" /></span>
+  
+   <section className="max-w-[1240px] mx-auto bg-white py-16">
+      <div className="container mx-auto px-6 lg:px-20">
+        <div className="hsli flex flex-col md:flex-row justify-between">
+      <h2 className="text-4xl font-bold text-gray-900 mb-6 text-center">
+            Meet Our <span className="text-blue-600">Teachers <img src={about15} className='top-2 ml-48' alt="img" /></span>
           </h2>
-          <div className="flex flex-wrap justify-center gap-6">
-            {teachers.map((teacher, index) => (
-              <div
-                key={index}
-                className="bg-gray-50 p-6 rounded-lg shadow text-center"
-              >
-                <img
-                  src={teacher.image}
-                  alt={teacher.name}
-                  className="w-24 h-24 mx-auto rounded-full"
-                />
-                <h3 className="mt-4 text-xl font-semibold text-gray-900">
-                  {teacher.name}
-                </h3>
-                <p className="text-gray-600">{`Teaches ${teacher.subject}`}</p>
-              </div>
-            ))}
-          </div>  </div> </section>
+          {/* Add previous/next buttons */}
+      <div className="flex justify-center gap-2 mb-4">
+        <button
+          onClick={goToPreviousSlide} // Call goToPreviousSlide on click
+          className="w-11 h-11 flex items-center justify-center rounded-full border-[1px] border-gray-200 text-gray-600 hover:bg-blue-600 hover:text-white transition-colors duration-300"
+        >
+          &lt;
+        </button>
 
-          <section className="my-8 py-16 bg-white ">
+        <button
+          onClick={goToNextSlide} // Call goToNextSlide on click
+          className="w-11 h-11 flex items-center justify-center rounded-full border-[1px] border-gray-200 text-gray-600 hover:bg-blue-600 hover:text-white transition-colors duration-300"
+        >
+          &gt;
+        </button>
+      </div>
+
+
+      </div>
+        <Swiper
+        spaceBetween={20}
+        slidesPerView={1}
+        breakpoints={{
+          640: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        }}
+        className="mySwiper"
+      >
+        {teachers.map((teacher, index) => (
+          <SwiperSlide key={index} className="max-w-[330px]">
+            <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-md relative">
+              <img
+                src={teacher.image}
+                alt={teacher.name}
+                className="w-40 h-40 rounded-full mb-4"
+              />
+
+              {/* Hover Icon and Socials */}
+              <div
+  className={`absolute top-4 right-4 flex items-center justify-center transition-all duration-300 ${
+    hoveredIndex === index ? "h-32" : "h-12"
+  } w-12 bg-blue-600 text-white rounded-full cursor-pointer`}
+  onMouseEnter={() => setHoveredIndex(index)}
+  onMouseLeave={() => setHoveredIndex(null)}
+>
+  <div
+    className={`flex flex-col items-center transition-opacity duration-300 ${
+      hoveredIndex === index ? "opacity-100" : "opacity-0"
+    }`}
+  >
+    <a
+      href={teacher.socials.facebook}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="mb-2 hover:text-blue-300"
+    >
+      <FaFacebook size={16} />
+    </a>
+    <a
+      href={teacher.socials.twitter}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="mb-2 hover:text-blue-300"
+    >
+      <FaTwitter size={16} />
+    </a>
+    <a
+      href={teacher.socials.linkedin}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-blue-300"
+    >
+      <FaLinkedin size={16} />
+    </a>
+  </div>
+
+  {/* + or - for expand/collapse */}
+  <span
+    className={`text-lg font-bold mr-4  ${
+      hoveredIndex === index ? "hidden" : "block"
+    }`}
+  >
+    {hoveredIndex === index ? "-" : "+"}
+  </span>
+</div>
+
+
+              {/* Teacher's Name and Subject */}
+              <h3 className="text-lg font-semibold mt-8">{teacher.name}</h3>
+              <p className="text-sm text-gray-500">{teacher.subject}</p>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+      </div>
+    </section>
+
+
+          <section className="my-8 py-16 max-w-[1240px] mx-auto bg-white ">
   <div className=" container mx-auto p-8  flex flex-col lg:gap-10 justify-between lg:flex-row  lg:items-start">
     {/* Left Side Text */}
     <div className="w-2/3 lg:w-w-24f  text-left mb-8 lg:mb-0">
