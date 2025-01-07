@@ -2,7 +2,6 @@ import React from "react";
 import queto from "../../assets/images/queto.png";
 import user from "../../assets/images/test-2-avatar-4.png";
 
-
 const Testimonials = () => {
   return (
     <>
@@ -31,142 +30,156 @@ const Testimonials = () => {
             </span>
           </h2>
         </div>
-        <div className="testimonials-wrapper   overflow-hidden animate-marquee py-14 flex items-start gap-10">
-          <div className="testimonials-content w-[25%] p-10 rounded-2xl  bg-white ">
-            <div className="flex  justify-end">
-              <img src={queto} alt="queto" />
-            </div>
-            <h3 className="text-[18px] text-primary font-semibold">
-              Great quality!
-            </h3>
-            <p className="text-secondary font-medium text-opacity-90 py-7 text-[16px]">
-              I wanted to place a review since their support helped me within a
-              day or so, which is nice! Thanks and 5 stars!
-            </p>
-            <div className="flex items-center">
-              <div className="user img">
-                <img src={user} width={60} alt="user" />
+        <div className="testimonial-wrapper   overflow-hidden relative  py-14  ">
+          <div className="flex space-x-10 testimonial-container  animate-slide items-start gap-10">
+            <div className="testimonials-content w-[25%] p-10 rounded-2xl  bg-white ">
+              <div className="flex  justify-end">
+                <img src={queto} alt="queto" />
               </div>
-              <div className="pl-4">
-                <b>
-                  <p className="text-[17px]">Hilary Ouse</p>
-                </b>
-                <p className="text-[15px] text-gray-500 ">Design, Manchester</p>
-              </div>
-            </div>
-          </div>
-          <div className="testimonials-content w-[25%] p-10 rounded-2xl  bg-white ">
-            <div className="flex  justify-end">
-              <img src={queto} alt="queto" />
-            </div>
-            <h3 className="text-[18px] text-primary font-semibold">
-              Great quality!
-            </h3>
-            <p className="text-secondary font-medium text-opacity-90 py-7 text-[16px]">
-              I wanted to place a review since their support helped me within a
-              day or so, which is nice! Thanks and 5 stars!
-            </p>
-            <div className="flex items-center">
-              <div className="user img">
-                <img src={user} width={60} alt="user" />
-              </div>
-              <div className="pl-4">
-                <b>
-                  <p className="text-[17px]">Hilary Ouse</p>
-                </b>
-                <p className="text-[15px] text-gray-500 ">Design, Manchester</p>
+              <h3 className="text-[18px] text-primary font-semibold">
+                Great quality!
+              </h3>
+              <p className="text-secondary font-medium text-opacity-90 py-7 text-[16px]">
+                I wanted to place a review since their support helped me within
+                a day or so, which is nice! Thanks and 5 stars!
+              </p>
+              <div className="flex items-center">
+                <div className="user img">
+                  <img src={user} width={60} alt="user" />
+                </div>
+                <div className="pl-4">
+                  <b>
+                    <p className="text-[17px]">Hilary Ouse</p>
+                  </b>
+                  <p className="text-[15px] text-gray-500 ">
+                    Design, Manchester
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="testimonials-content w-[25%] p-10 rounded-2xl  bg-white ">
-            <div className="flex  justify-end">
-              <img src={queto} alt="queto" />
-            </div>
-            <h3 className="text-[18px] text-primary font-semibold">
-              Great quality!
-            </h3>
-            <p className="text-secondary font-medium text-opacity-90 py-7 text-[16px]">
-              I wanted to place a review since their support helped me within a
-              day or so, which is nice! Thanks and 5 stars!
-            </p>
-            <div className="flex items-center">
-              <div className="user img">
-                <img src={user} width={60} alt="user" />
+            <div className="testimonials-content w-[25%] p-10 rounded-2xl  bg-white ">
+              <div className="flex  justify-end">
+                <img src={queto} alt="queto" />
               </div>
-              <div className="pl-4">
-                <b>
-                  <p className="text-[17px]">Hilary Ouse</p>
-                </b>
-                <p className="text-[15px] text-gray-500 ">Design, Manchester</p>
-              </div>
-            </div>
-          </div>
-          <div className="testimonials-content w-[25%] p-10 rounded-2xl  bg-white ">
-            <div className="flex  justify-end">
-              <img src={queto} alt="queto" />
-            </div>
-            <h3 className="text-[18px] text-primary font-semibold">
-              Great quality!
-            </h3>
-            <p className="text-secondary font-medium text-opacity-90 py-7 text-[16px]">
-              I wanted to place a review since their support helped me within a
-              day or so, which is nice! Thanks and 5 stars!
-            </p>
-            <div className="flex items-center">
-              <div className="user img">
-                <img src={user} width={60} alt="user" />
-              </div>
-              <div className="pl-4">
-                <b>
-                  <p className="text-[17px]">Hilary Ouse</p>
-                </b>
-                <p className="text-[15px] text-gray-500 ">Design, Manchester</p>
+              <h3 className="text-[18px] text-primary font-semibold">
+                Great quality!
+              </h3>
+              <p className="text-secondary font-medium text-opacity-90 py-7 text-[16px]">
+                I wanted to place a review since their support helped me within
+                a day or so, which is nice! Thanks and 5 stars!
+              </p>
+              <div className="flex items-center">
+                <div className="user img">
+                  <img src={user} width={60} alt="user" />
+                </div>
+                <div className="pl-4">
+                  <b>
+                    <p className="text-[17px]">Hilary Ouse</p>
+                  </b>
+                  <p className="text-[15px] text-gray-500 ">
+                    Design, Manchester
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="testimonials-content w-[25%] p-10 rounded-2xl  bg-white ">
-            <div className="flex  justify-end">
-              <img src={queto} alt="queto" />
-            </div>
-            <h3 className="text-[18px] text-primary font-semibold">
-              Great quality!
-            </h3>
-            <p className="text-secondary font-medium text-opacity-90 py-7 text-[16px]">
-              I wanted to place a review since their support helped me within a
-              day or so, which is nice! Thanks and 5 stars!
-            </p>
-            <div className="flex items-center">
-              <div className="user img">
-                <img src={user} width={60} alt="user" />
+            <div className="testimonials-content w-[25%] p-10 rounded-2xl  bg-white ">
+              <div className="flex  justify-end">
+                <img src={queto} alt="queto" />
               </div>
-              <div className="pl-4">
-                <b>
-                  <p className="text-[17px]">Hilary Ouse</p>
-                </b>
-                <p className="text-[15px] text-gray-500 ">Design, Manchester</p>
+              <h3 className="text-[18px] text-primary font-semibold">
+                Great quality!
+              </h3>
+              <p className="text-secondary font-medium text-opacity-90 py-7 text-[16px]">
+                I wanted to place a review since their support helped me within
+                a day or so, which is nice! Thanks and 5 stars!
+              </p>
+              <div className="flex items-center">
+                <div className="user img">
+                  <img src={user} width={60} alt="user" />
+                </div>
+                <div className="pl-4">
+                  <b>
+                    <p className="text-[17px]">Hilary Ouse</p>
+                  </b>
+                  <p className="text-[15px] text-gray-500 ">
+                    Design, Manchester
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="testimonials-content w-[25%] p-10 rounded-2xl  bg-white ">
-            <div className="flex  justify-end">
-              <img src={queto} alt="queto" />
-            </div>
-            <h3 className="text-[18px] text-primary font-semibold">
-              Great quality!
-            </h3>
-            <p className="text-secondary font-medium text-opacity-90 py-7 text-[16px]">
-              I wanted to place a review since their support helped me within a
-              day or so, which is nice! Thanks and 5 stars!
-            </p>
-            <div className="flex items-center">
-              <div className="user img">
-                <img src={user} width={60} alt="user" />
+            <div className="testimonials-content w-[25%] p-10 rounded-2xl  bg-white ">
+              <div className="flex  justify-end">
+                <img src={queto} alt="queto" />
               </div>
-              <div className="pl-4">
-                <b>
-                  <p className="text-[17px]">Hilary Ouse</p>
-                </b>
-                <p className="text-[15px] text-gray-500 ">Design, Manchester</p>
+              <h3 className="text-[18px] text-primary font-semibold">
+                Great quality!
+              </h3>
+              <p className="text-secondary font-medium text-opacity-90 py-7 text-[16px]">
+                I wanted to place a review since their support helped me within
+                a day or so, which is nice! Thanks and 5 stars!
+              </p>
+              <div className="flex items-center">
+                <div className="user img">
+                  <img src={user} width={60} alt="user" />
+                </div>
+                <div className="pl-4">
+                  <b>
+                    <p className="text-[17px]">Hilary Ouse</p>
+                  </b>
+                  <p className="text-[15px] text-gray-500 ">
+                    Design, Manchester
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="testimonials-content w-[25%] p-10 rounded-2xl  bg-white ">
+              <div className="flex  justify-end">
+                <img src={queto} alt="queto" />
+              </div>
+              <h3 className="text-[18px] text-primary font-semibold">
+                Great quality!
+              </h3>
+              <p className="text-secondary font-medium text-opacity-90 py-7 text-[16px]">
+                I wanted to place a review since their support helped me within
+                a day or so, which is nice! Thanks and 5 stars!
+              </p>
+              <div className="flex items-center">
+                <div className="user img">
+                  <img src={user} width={60} alt="user" />
+                </div>
+                <div className="pl-4">
+                  <b>
+                    <p className="text-[17px]">Hilary Ouse</p>
+                  </b>
+                  <p className="text-[15px] text-gray-500 ">
+                    Design, Manchester
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="testimonials-content w-[25%] p-10 rounded-2xl  bg-white ">
+              <div className="flex  justify-end">
+                <img src={queto} alt="queto" />
+              </div>
+              <h3 className="text-[18px] text-primary font-semibold">
+                Great quality!
+              </h3>
+              <p className="text-secondary font-medium text-opacity-90 py-7 text-[16px]">
+                I wanted to place a review since their support helped me within
+                a day or so, which is nice! Thanks and 5 stars!
+              </p>
+              <div className="flex items-center">
+                <div className="user img">
+                  <img src={user} width={60} alt="user" />
+                </div>
+                <div className="pl-4">
+                  <b>
+                    <p className="text-[17px]">Hilary Ouse</p>
+                  </b>
+                  <p className="text-[15px] text-gray-500 ">
+                    Design, Manchester
+                  </p>
+                </div>
               </div>
             </div>
           </div>

@@ -38,18 +38,31 @@
 }
 
 .footer-list > ul > li:hover {
-  color: #5956E9;
+  color: #5956e9;
 }
 
-@keyframes marquee {
+/* #testimonials */
+
+.testimonial-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.testimonials-content {
+  flex-shrink: 0; 
+  width: 25%; 
+  box-sizing: border-box;
+}
+
+@keyframes slide {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-75%); 
   }
 }
 
-.animate-marquee {
-  animation: marquee 20s linear infinite;
+.animate-slide {
+  animation: slide 20s linear infinite;
 }
