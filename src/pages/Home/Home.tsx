@@ -14,7 +14,9 @@ const Home = () => {
       <Link to="/about" className="text-blue-500 underline hover:text-blue-700 mb-4">
         About Page
       </Link>
-    
+      <Link to="/faq" className="text-blue-500 underline hover:text-blue-700 mb-4">
+        Faq
+      </Link>
       {/* Main Sections */}
       <CoursesOverview />
       <Funfact />

@@ -1,6 +1,8 @@
 import  { useState, useEffect,useRef } from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
 import about19 from "../../assets/images/tchreimg.jpg";
+import CountUp from 'react-countup';
+import { useInView } from 'react-intersection-observer';
 import "swiper/css";
 import { FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
 import about1 from '../../assets/images/aboutImg.jpg';
@@ -50,12 +52,12 @@ const About: React.FC = () => {
     },
   ];
 
-  const formatNumber = (value: number): string => {
-    if (value >= 1000) {
-      return `${(value / 1000).toFixed(0)}K`;
-    }
-    return value.toString();
-  };
+  // const formatNumber = (value: number): string => {
+  //   if (value >= 1000) {
+  //     return `${(value / 1000).toFixed(0)}K`;
+  //   }
+  //   return value.toString();
+  // };
   
  
     const [stats, setStats] = useState([
@@ -64,29 +66,37 @@ const About: React.FC = () => {
       { value: 0, target: 240, label: 'Online Instructors' },
       { value: 0, target: 110, label: 'Countries' },
     ]);
+    const { ref, inView } = useInView({
+      triggerOnce: true,
+      threshold: 0.5, 
+    });
+  
+    const formatNumber = (value) => {
+      return value >= 1000 ? `${value / 1000}k` : value;
+    };
   
     useEffect(() => {
-      const incrementValues = () => {
+      if (!inView) return; // Start animation only when in view
+  
+      const interval = setInterval(() => {
         setStats((prevStats) =>
           prevStats.map((stat) => {
             if (stat.value < stat.target) {
-              const increment = Math.ceil((stat.target - stat.value) / 30); // Increment dynamically
+              const increment = Math.ceil(stat.target / 10); 
               return {
                 ...stat,
-                value: Math.min(stat.value + increment, stat.target), 
+                value: Math.min(stat.value + increment, stat.target),
               };
             }
             return stat;
           })
         );
-      };
+      }, 200); 
   
-      const intervalId = setInterval(() => {
-        incrementValues();
-      }, 50); // Adjust speed as needed
-  
-      return () => clearInterval(intervalId);
-    }, []);
+      return () => clearInterval(interval);
+    }, [inView]);
+
+
   // Teachers Data
   const teachers = [
     {
@@ -161,7 +171,7 @@ const About: React.FC = () => {
     { id: 8, name: 'Learning', logo: about9 },
   ];
   const [hoveredIndex, setHoveredIndex] = useState(null);
-  const swiperRef = useRef(null);  // Add a ref to access Swiper instance
+  const swiperRef = useRef(null); 
 
   // Function to move to the previous slide
   const goToPreviousSlide = () => {
@@ -323,7 +333,10 @@ const About: React.FC = () => {
         </div>
       </section>
           {/* Statistics Section */} 
-          <div className= " bg-blue-600 lg:px-16 text-white py-12 mt-16 flex flex-wrap justify-around">
+          <div
+      className="bg-blue-600 lg:px-16 text-white py-12 mt-16 flex flex-wrap justify-around"
+      ref={ref}
+    >
       {stats.map((stat, index) => (
         <div className="text-center" key={index}>
           <h3 className="text-4xl font-bold">{formatNumber(stat.value)}</h3>
