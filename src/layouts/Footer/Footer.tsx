@@ -6,7 +6,7 @@ import appStore from "../../assets/images/apple-store.jpg";
 
 const Footer = () => {
   return (
-    <>
+    <div className="bg-[#F3F4F8]">
       <div className="container">
         <div className="grid grid-cols-4 text-secondary py-14 font-medium ">
           <div>
@@ -183,7 +183,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -31,6 +31,7 @@ export default {
         slowPing: "slowPing 1.5s infinite",
         "move-left-right": "moveLeftRight 5s ease-in-out infinite",
         "move-up-down": "moveUpDown 7s ease-in-out infinite",
+      
       },
       keyframes: {
         slowPing: {
