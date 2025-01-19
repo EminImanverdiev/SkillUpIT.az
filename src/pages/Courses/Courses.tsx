@@ -2,6 +2,7 @@ import React from "react";
 import men from "../../assets/images/men1.png";
 import animation from "../../assets/images/shape-2.png";
 import CoursesCategory from "./CoursesCategory";
+import ViewPrograms from "../Home/ViewPrograms";
 
 const Courses = () => {
   return (
@@ -35,7 +36,8 @@ const Courses = () => {
           </div>
         </div>
       </div>
-      <CoursesCategory/>
+      <CoursesCategory />
+      <ViewPrograms />
     </>
   );
 };

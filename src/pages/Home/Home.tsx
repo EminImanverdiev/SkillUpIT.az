@@ -7,6 +7,7 @@ import PopularCourses from "./PopularCourses";
 import PopularPost from "./PopularPost";
 import Testimonials from "./Testimonials";
 import Instructors from "./Instructors";
+import ViewPrograms from "./ViewPrograms";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <Category />
       <PopularCourses />
       <Instructors/>
+      <ViewPrograms/>
       <Testimonials/>
       <PopularPost/>
       <Subscribe />
