@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import ins1 from "../../assets/images/leadership-thumb-1.jpg";
 import ins2 from "../../assets/images/leadership-thumb-2.jpg";
 import ins3 from "../../assets/images/leadership-thumb-3.jpg";
+import courseImg from '../../assets/images/course-thumb-5.jpg';
+import courseImg2 from '../../assets/images/course-thumb-4.jpg'
 import { FaFacebook, FaTwitter, FaArrowRight } from "react-icons/fa";
 
 interface TeamMember {
@@ -66,12 +68,19 @@ const teamMembers: TeamMember[] = [
     twitter: "https://twitter.com",
     courses: 20,
     students: 37,
-    biography:
-      "Indigo Violet is an accomplished educator and expert in the field of computer science, with over 15 years of experience in both academia and industry. She currently serves as a Professor of Computer Science at Tech University.",
+    biography: `Indigo Violet is an accomplished educator and expert in the field of computer science, with over 15 years of experience 
+    in both academia and industry. She currently serves as a Professor of Computer Science at Tech University.\n\n
+    As an English lecturer, I am fervently dedicated to shaping the linguistic and literary acumen of my students.
+    With a profound passion for language education, I employ dynamic and innovative teaching methods to inspire a love 
+    for literature and effective communication. My commitment extends beyond the curriculum, fostering an environment 
+    where students develop critical thinking skills and a deep appreciation for the nuances of the English language.`,
+    
     popularCourses: [
       {
         title: "Computer Science: Mathematical and Analytical",
+        category: "Art & Design",
         lessons: 12,
+        imgCourse:courseImg2,
         students: 45,
         rating: 5.0,
         price: "$26.00",
@@ -79,23 +88,65 @@ const teamMembers: TeamMember[] = [
       },
       {
         title: "Machine Learning A-Z: Hands-on Python and Java",
+        category: "Art & Design",
         lessons: 12,
         students: 45,
+        imgCourse:courseImg,
         rating: 5.0,
         price: "$26.00",
         originalPrice: "$84.00",
+      },
+      {
+        title: "The Complete Guide to Build RESTful API Application",
+        category: "Art & Design",
+        lessons: 12,
+        imgCourse:courseImg,
+        students: 45,
+        rating: 5.0,
+        price: "Free",
+      },
+      {
+        title: "Grow Personal Financial Security Thinking & Principles",
+        category: "Art & Design",
+        lessons: 12,
+        imgCourse:courseImg,
+        students: 45,
+        rating: 5.0,
+        price: "$86.00",
+      },
+      {
+        title: "Starting SEO as Your Home-Based Business",
+        category: "Art & Design",
+        lessons: 12,
+        students: 45,
+        imgCourse:courseImg,
+        rating: 5.0,
+        price: "$26.00",
+        originalPrice: "$54.00",
+      },
+      {
+        title: "Interior Design Concepts Masterclass",
+        category: "Art & Design",
+        lessons: 12,
+        students: 45,
+        imgCourse:courseImg,
+        rating: 5.0,
+        price: "Free",
       },
     ],
   },
 ];
 
 
+
 const Instructor = () => {
   const navigate = useNavigate();
 
   const handleDetails = (member) => {
-    navigate(`/details/${member.id}`, { state: { member } });
+    navigate(`/instructor/${member.id}`, { state: { member } });
   };
+  
+  
 
   return (
     <div className="full bg-white">
