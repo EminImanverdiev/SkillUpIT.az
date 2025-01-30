@@ -38,3 +38,45 @@
 .footer-list > ul > li:hover {
   color: #5956E9;
 }
+.group {
+  position: relative;
+  overflow: hidden; 
+}
+
+.group:hover .btn-course {
+  display: block;
+}
+
+.group:hover img {
+
+  transition: transform 0.3s ease-in-out; 
+}
+
+.group img {
+  transition: transform 0.3s ease-in-out; 
+}
+
+.group .btn-course {
+  display: none;
+  text-align: center;
+}
+
+.group .p-4 {
+  position: relative;
+  z-index: 10; 
+  transition: top 0.3s ease-in-out; 
+}
+
+.group:hover .p-4 {
+  top: -10px;
+}
+
+.group .content-wrapper {
+  position: relative;
+  top: 0; 
+  transition: top 0.4s ease-in-out; 
+}
+
+.group:hover .content-wrapper {
+  top: -50px; 
+}
