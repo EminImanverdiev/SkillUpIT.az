@@ -12,9 +12,7 @@
   width: 0;
   height: 2px;
   background-color: #000; /* Change to your preferred underline color */
-  transition:
-    width 0.3s ease,
-    left 0.3s ease;
+  transition: width 0.3s ease, left 0.3s ease;
 }
 
 .email-address:hover::after {
@@ -29,10 +27,10 @@
   margin-right: 25px;
   margin-bottom: 24px;
   background-color: #ffd25d;
-  border-radius: 67% 33% 35% 65% / 37% 35% 65% 63%;
+  border-radius: 50%; /* Adjusted for proper parsing */
 }
 
-/* footer */
+/* Footer */
 .footer-list > ul > li {
   transition-duration: 1s;
 }
@@ -40,6 +38,7 @@
 .footer-list > ul > li:hover {
   color: #5956e9;
 }
+<<<<<<< HEAD
 
 /* #testimonials */
 
@@ -66,3 +65,47 @@
 .animate-slide {
   animation: slide 20s linear infinite;
 }
+/* =======
+.group {
+  position: relative;
+  overflow: hidden; 
+}
+
+.group:hover .btn-course {
+  display: block;
+}
+
+.group:hover img {
+
+  transition: transform 0.3s ease-in-out; 
+}
+
+.group img {
+  transition: transform 0.3s ease-in-out; 
+}
+
+.group .btn-course {
+  display: none;
+  text-align: center;
+}
+
+.group .p-4 {
+  position: relative;
+  z-index: 10; 
+  transition: top 0.3s ease-in-out; 
+}
+
+.group:hover .p-4 {
+  top: -10px;
+}
+
+.group .content-wrapper {
+  position: relative;
+  top: 0; 
+  transition: top 0.4s ease-in-out; 
+}
+
+.group:hover .content-wrapper {
+  top: -50px; 
+}
+>>>>>>> e5a214bac2325c7ef4d54b5f142781f29ba21115 */

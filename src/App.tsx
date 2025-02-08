@@ -1,7 +1,8 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import "./index.css";
-import About from "./pages/About/About";
+import Faq from "./pages/Faq/Faq";
+import Instructor from "./pages/Instructor/Instructor";
 import Home from "./pages/Home/Home";
 import Blog from "./pages/Blog/Blog";
 import Apply from "./pages/Apply/Apply";
@@ -16,6 +17,8 @@ import Event from "./pages/Event/Event";
 import Header from "./layouts/Header/Header";
 import Footer from "./layouts/Footer/Footer";
 import ScrollToTap from "./utils/ScrollToTap";
+import About from "./pages/About/About.tsx";
+import Detail from "./pages/Instructor/Detail";
 
 function App() {
   return (
@@ -26,11 +29,13 @@ function App() {
         {/* Place Header outside Routes to render it on all pages */}
 
         <Route>
-          
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/instructor" element={<Instructor />} />
+          <Route path="/instructor/:id" element={<Detail />} />
+          <Route path="/faq" element={<Faq />} />
           <Route path="/event" element={<Event />} />
           <Route path="/courses" element={<Courses />} />
+          <Route path="/about" element={<About />} />
           <Route path="/apply" element={<Apply />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
@@ -39,7 +44,7 @@ function App() {
           <Route path="/student" element={<Students />} />
           <Route path="/teacher" element={<Teachers />} />
           <Route path="/vacancies" element={<Vacancies />} />
-          <Route path="/addmition"/>
+          <Route path="/addmition" />
         </Route>
       </Routes>
       <Footer />
