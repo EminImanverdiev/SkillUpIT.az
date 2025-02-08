@@ -21,9 +21,9 @@ const SearchBar = () => {
           <path
             d="M16.0004 16L12.3754 12.375M14.3333 7.66665C14.3333 11.3485 11.3485 14.3333 7.66665 14.3333C3.98476 14.3333 1 11.3485 1 7.66665C1 3.98476 3.98476 1 7.66665 1C11.3485 1 14.3333 3.98476 14.3333 7.66665Z"
             stroke="currentColor"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           ></path>
         </svg>
       </div>

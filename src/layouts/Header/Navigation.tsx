@@ -14,9 +14,9 @@ const Navigation = () => {
                 className="w-4 h-4 transform group-hover:rotate-180 transition-transform duration-300"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 viewBox="0 0 24 24"
               >
                 <path d="M6 9l6 6 6-6" />
@@ -31,9 +31,9 @@ const Navigation = () => {
                 className="w-4 h-4 transform group-hover:rotate-180 transition-transform duration-300"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 viewBox="0 0 24 24"
               >
                 <path d="M6 9l6 6 6-6" />
@@ -48,9 +48,9 @@ const Navigation = () => {
                 className="w-4 h-4 transform group-hover:rotate-180 transition-transform duration-300"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 viewBox="0 0 24 24"
               >
                 <path d="M6 9l6 6 6-6" />
@@ -65,9 +65,9 @@ const Navigation = () => {
                 className="w-4 h-4 transform group-hover:rotate-180 transition-transform duration-300"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 viewBox="0 0 24 24"
               >
                 <path d="M6 9l6 6 6-6" />
@@ -82,9 +82,9 @@ const Navigation = () => {
                 className="w-4 h-4 transform group-hover:rotate-180 transition-transform duration-300"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 viewBox="0 0 24 24"
               >
                 <path d="M6 9l6 6 6-6" />

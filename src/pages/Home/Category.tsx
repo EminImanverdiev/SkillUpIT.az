@@ -95,18 +95,18 @@ const Category = () => {
                 <path
                   d="M8.71533 1L13 5.28471L8.71533 9.56941"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>
+                  strokeWidth="2"
+                  strokeMiterlimit="10"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                ></path> 
                 <path
                   d="M1 5.28473H12.88"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeMiterlimit="10"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 ></path>
               </svg>
             </span>

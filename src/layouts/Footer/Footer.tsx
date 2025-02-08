@@ -31,18 +31,18 @@ const Footer = () => {
                     <path
                       d="M8.71533 1L13 5.28471L8.71533 9.56941"
                       stroke="currentColor"
-                      stroke-width="2"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeMiterlimit="10"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     ></path>
                     <path
                       d="M1 5.28467H12.88"
                       stroke="currentColor"
-                      stroke-width="2"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeMiterlimit="10"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     ></path>
                   </svg>
                 </span>
@@ -114,34 +114,34 @@ const Footer = () => {
                     <path
                       d="M1 5C1 2.2 2.6 1 5 1H13C15.4 1 17 2.2 17 5V10.6C17 13.4 15.4 14.6 13 14.6H5"
                       stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.5"
+                      strokeMiterlimit="10"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     ></path>
                     <path
                       d="M13 5.40039L10.496 7.40015C9.672 8.05607 8.32 8.05607 7.496 7.40015L5 5.40039"
                       stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.5"
+                      strokeMiterlimit="10"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     ></path>
                     <path
                       d="M1 11.4004H5.8"
                       stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.5"
+                      strokeMiterlimit="10"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     ></path>
                     <path
                       d="M1 8.19922H3.4"
                       stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.5"
+                      strokeMiterlimit="10"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     ></path>
                   </svg>
                 </span>
