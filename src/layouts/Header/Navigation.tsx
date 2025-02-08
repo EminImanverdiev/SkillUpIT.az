@@ -59,7 +59,7 @@ const Navigation = () => {
           </li>
           <li className="relative group">
             <button className="flex items-center space-x-2 hover:text-blue-500">
-              <span><Link to="/block">Block</Link></span>
+              <span><Link to="/blog">Blog</Link></span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-4 h-4 transform group-hover:rotate-180 transition-transform duration-300"
