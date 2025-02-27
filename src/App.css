@@ -12,7 +12,9 @@
   width: 0;
   height: 2px;
   background-color: #000; /* Change to your preferred underline color */
-  transition: width 0.3s ease, left 0.3s ease;
+  transition:
+    width 0.3s ease,
+    left 0.3s ease;
 }
 
 .email-address:hover::after {
@@ -48,8 +50,8 @@
 }
 
 .testimonials-content {
-  flex-shrink: 0; 
-  width: 25%; 
+  flex-shrink: 0;
+  width: 25%;
   box-sizing: border-box;
 }
 
@@ -58,13 +60,42 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-75%); 
+    transform: translateX(-75%);
   }
 }
 
 .animate-slide {
   animation: slide 20s linear infinite;
 }
+
+/* blog */
+.dot::before {
+  content: "•";
+  margin: 0 0.5rem; /* Nöqtə ilə söz arasındakı məsafə */
+}
+.blog-unordredlist > li {
+  padding-bottom: 15px;
+  opacity: 0.7;
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-tag>span{
+  background-color: #F1F3FE;
+  margin-right: 10px;
+  padding: 5px 15px;
+  margin-bottom: 10px;
+  color: grey;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.blog-tag>span:hover{
+ background-color: #5956e9;
+ color: white;
+}
+
 /* =======
 .group {
   position: relative;

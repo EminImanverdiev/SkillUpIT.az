@@ -5,8 +5,7 @@ const Blog = () => {
   return (
     <div>
       <OurBlog />
-      fcdrv
-    </div>
+      </div>
   );
 };
 
